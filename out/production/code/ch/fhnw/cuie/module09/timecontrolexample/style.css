@@ -1,0 +1,87 @@
+.timeControl {
+    -fx-padding: 10;
+    -base-color: rgb(255, 201, 104);
+    -fx-background-color: rgb(255, 255, 250);
+}
+
+.timeControl .drawingPane {
+    -fx-background-color: transparent;
+}
+
+.timeControl .editableNode {
+    -fx-font-family: 'Lato Regular';
+    -fx-font-size: 14;
+    -fx-text-fill: derive(-base-color, -30%);
+    -fx-prompt-text-fill: derive(-base-color, 40%);
+}
+
+.timeControl .editableNode:focused {
+    -fx-prompt-text-fill: derive(-base-color, 40%);
+    -fx-highlight-fill: derive(-base-color, -30%);
+}
+
+.timeControl:convertible .editableNode {
+    -fx-font-family: 'Lato Light';
+    -fx-text-fill: derive(-base-color, -20%);
+}
+
+.timeControl:invalid .editableNode {
+    -fx-font-family: 'Lato Light';
+    -fx-text-fill: red;
+}
+
+.timeControl:mandatory .editableNode {
+    -fx-background-color: white;
+    -fx-border-color: derive(-base-color, -30%);
+    -fx-border-width: 2;
+    -fx-border-radius: 4;
+}
+
+.timeControl:mandatory .editableNode:focused {
+    -fx-background-color: white;
+    -fx-border-color: derive(-base-color, -30%);
+    -fx-border-width: 2;
+    -fx-border-radius: 4;
+}
+
+.timeControl .readOnlyNode {
+    -fx-font-family: 'DS-Digital';
+    -fx-pref-width: 80;
+    -fx-max-width: 1024;
+    -fx-alignment: center;
+    -fx-content-display: text-only;
+    -fx-font-size: 22;
+    -fx-text-fill: rgb(139, 86, 70);
+    -fx-background-color: linear-gradient(from 50% 0% to 50% 100%,
+                                           rgb(255, 255, 255) 0%,
+                                           rgb(255, 245, 225) 3%,
+                                           rgb(255, 217, 147) 50%,
+                                           rgb(255, 201, 104) 50%,
+                                           rgb(255, 227, 173) 100%);
+    -fx-background-radius: 6;
+    -fx-padding: 2 7 2 7;
+    -fx-border-color:  rgb(255, 201, 104);
+    -fx-border-width: 1;
+    -fx-border-radius: 6;
+}
+
+.timeControl .chooserButton {
+    -fx-font-family: 'FontAwesome';
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-min-width: 26;
+    -fx-min-height: 26;
+    -fx-font-size: 14;
+    -fx-text-fill: derive(-base-color, -30%);
+    -fx-padding: 5;
+    -fx-content-display: text-only;
+    -fx-cursor: hand;
+}
+
+.timeControl .chooserButton:hover {
+    -fx-background-color: derive(-base-color, 70%);
+    -fx-background-radius: 1024;
+    -fx-background-insets: 4;
+}
+
+
