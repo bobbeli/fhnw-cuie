@@ -13,7 +13,7 @@ import java.time.*;
 
 /**
  * This Class provides a Time Controll UI
- *
+ * New
  */
 
 public class TimeControl extends StackPane{

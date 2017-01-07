@@ -56,7 +56,7 @@ public class Pane extends BorderPane {
 
         labelField = new TextField("Time (HH:mm)");
 
-        background = new Background(new BackgroundFill(Paint.valueOf("Gray"),null,null));
+        background = new Background(new BackgroundFill(Paint.valueOf("LightBlue"),null,null));
 
         clock = new TimeControl();
         this.setBackground(background);
